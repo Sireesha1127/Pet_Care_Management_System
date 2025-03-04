@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(rgb(248, 4, 4), rgba(3, 3, 3, 0.952));
+            background-size: cover;
+            background-attachment: fixed;
+            transition: 0.5s;
+        }
+        
+        .card {
+            margin-top: 10%;
+            border-radius: 13px;
+            transition: 0.5s;
+            display: inline-block;
+            display: block;
+            background: transparent;
+            position: relative;
+        }
+        
+        .modal-content {
+            border: 1px solid rgba(255, 255, 255, 0.185);
+            box-shadow: 0 2px 20px rgb(27, 26, 26);
+            border-radius: 9px;
+            height: 350px;
+        }
+        
+        .card h3 {
+            font-family: cursive;
+            font-size: 18px;
+            color: black;
+        }
+        
+        .logo {
+            height: 50px;
+            width: 50px;
+            border: 2px solid rgba(241, 240, 240, 0.788);
+            border-radius: 50%;
+            margin-top: -10px;
+        }
+        
+        .logo:hover {
+            transform: scale(0.9);
+            transition: 0.5s;
+        }
+        
+        .login {
+            margin-top: 10px;
+        }
+        
+        .card input {
+            background: transparent;
+            border: none;
+            text-align: center;
+            border-bottom: 2px solid rgb(31, 26, 26);
+            padding: 5px;
+            border-radius: 7px;
+            color: #fff;
+        }
+        
+        input:hover {
+            transform: scale(0.9);
+            transition: 0.5s;
+        }
+        
+        .submit {
+            margin-top: 27px;
+            width: 110px;
+            padding: 5px;
+            background: url();
+            border-radius: 5px;
+            margin-bottom: 7px;
+            border: 1px solid #fff;
+            color: rgba(248, 248, 248, 0.856);
+        }
+        
+        .submit:hover {
+            transform: scale(0.9);
+            transition: 0.5s;
+        }
+        
+        .forgot {
+            font-size: 12px;
+            color: rgb(19, 17, 17);
+            font-family: cursive;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        
+        .forgot:hover {
+            transform: scale(0.9);
+            transition: 0.5s;
+            color: rgba(255, 249, 249, 0.63);
+        }
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: relative;
+            transition: 0.5s;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 280px;
+            /* Full width */
+            height: 300px;
+            /* Full height */
+            /* Enable scroll if needed */
+            background: transparent;
+            /* Fallback color */
+            background: transparent;
+            /* Black w/ opacity */
+            padding-bottom: 60px;
+        }
+        /* Add Zoom Animation */
+        
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+        
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }
+        /* Change styles for span and cancel button on extra small screens */
+        
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+        
+        .cancelbtn {
+            color: darkgoldenrod;
+            border-bottom: 1px solid white;
+            transition: 0.5s;
+            margin-top: 20px;
+            border: none;
+            background: transparent;
+        }
+        
+        .mainbtn {
+            background-color: dodgerblue;
+            width: 100px;
+            padding: 5px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <button onclick="document.getElementById('login').style.display='block'" style=";" class="mainbtn">Login</button>
+        <center>
+            <div id="login" class="card modal ">
+                <form class=" modal-content animate " action="/action_page.php " method="post ">
+
+                    <h3>login here</h3>
+                    <img src="C:\Users\KOKILA\Pictures\dpds.png " class="logo " alt=" ">
+                    <div class="container">
+                        <div class="logina login ">
+                            <input type="text " name="name " placeholder="username " required>
+                        </div>
+                        <div class="loginb login ">
+                            <input type="email " name="Email " placeholder="email " required>
+                        </div>
+                        <div class="loginc login ">
+                            <input type="password " name="Password " placeholder="password " required>
+                        </div>
+                        <button class="submit">login</button><br>
+                        <a href="# " class="forgot ">forgot password</a>
+                    </div>
+                    <div class="container">
+                        <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+
+                    </div>
+                </form>
+
+            </div>
+        </center>
+    </center>
+</body>
+
+</html>

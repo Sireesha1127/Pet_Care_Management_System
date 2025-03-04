@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)file:///home/rguktongole/Downloads/Dewi/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PRO</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="file:///home/rguktongole/Downloads/Dewi/assets/img/favicon.png" rel="icon">
+  <link href="file:///home/rguktongole/Downloads/Dewi/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="./PROJECT_files/css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./PROJECT_files/aos.css" rel="stylesheet">
+  <link href="./PROJECT_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./PROJECT_files/bootstrap-icons.css" rel="stylesheet">
+  <link href="./PROJECT_files/boxicons.min.css" rel="stylesheet">
+  <link href="./PROJECT_files/glightbox.min.css" rel="stylesheet">
+  <link href="./PROJECT_files/remixicon.css" rel="stylesheet">
+  <link href="./PROJECT_files/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./PROJECT_files/style.css" rel="stylesheet">
+  <style>
+    *,
+    *:before,
+    *:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+   
+    
+    input,
+    #button {
+        border: none;
+        outline: none;
+        background: none;
+    }
+    
+    .cont {
+        overflow: hidden;
+        position: relative;
+        width: 900px;
+        height: 570px;
+        background: #fff;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+    
+    .form {
+        position: relative;
+        width: 640px;
+        height: 100%;
+        padding: 50px 30px;
+        -webkit-transition: -webkit-transform 1.2s ease-in-out;
+        transition: -webkit-transform 1.2s ease-in-out;
+        transition: transform 1.2s ease-in-out;
+        transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+    }
+    
+    h2 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    label {
+        display: block;
+        width: 260px;
+        margin: 25px auto 0;
+        text-align: center;
+    }
+    
+    label span {
+        font-size: 14px;
+        font-weight: 600;
+        color: #505f75;
+        text-transform: uppercase;
+    }
+    
+    input {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+        font-size: 19px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        color: #252223;
+        font-weight: bold;
+    }
+    
+   #button {
+        display: block;
+        margin: 0 auto;
+        width: 130px;
+        height: 36px;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Nunito', sans-serif;
+        background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+    }
+    
+    .submit {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Nunito', sans-serif;
+        background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+    }
+    
+    input .password {
+        color: #03A9F4;
+    }
+    
+    .submit:hover {
+        box-shadow: 0 2px 10px #333;
+    }
+    
+    .forgot-pass {
+        text-align: center;
+        color: rgb(17, 110, 216);
+    }
+    
+    .forgot-pass:hover {
+        color: rgb(247, 16, 0);
+    }
+    
+    .sub-cont {
+        overflow: hidden;
+        position: absolute;
+        left: 640px;
+        top: 0;
+        width: 900px;
+        height: 100%;
+        padding-left: 260px;
+        background: #fff;
+        -webkit-transition: -webkit-transform 1.2s ease-in-out;
+        transition: -webkit-transform 1.2s ease-in-out;
+        transition: transform 1.2s ease-in-out;
+    }
+    
+    .cont.s-signup .sub-cont {
+        -webkit-transform: translate3d(-640px, 0, 0);
+        transform: translate3d(-640px, 0, 0);
+    }
+    
+    .img {
+        overflow: hidden;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 260px;
+        height: 100%;
+        padding-top: 360px;
+    }
+    
+    .img:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 900px;
+        height: 100%;
+        background-image: url(http://drive.google.com/uc?export=view&id=1JPTV2PXAe6dsAjMt8v1ehtZN1bFo5vbr);
+        background-size: cover;
+        transition: -webkit-transform 1.2s ease-in-out;
+        transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+    }
+    
+    .img:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    
+    .cont.s-signup .img:before {
+        -webkit-transform: translate3d(640px, 0, 0);
+        transform: translate3d(640px, 0, 0);
+    }
+    
+    .img-text {
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        color: #fff;
+        -webkit-transition: -webkit-transform 1.2s ease-in-out;
+        transition: -webkit-transform 1.2s ease-in-out;
+        transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+    }
+    
+    .img-text h2 {
+        margin-bottom: 10px;
+        font-weight: normal;
+    }
+    
+    .img-text p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .cont.s-signup .img-text.m-up {
+        -webkit-transform: translateX(520px);
+        transform: translateX(520px);
+    }
+    
+    .img-text.m-in {
+        -webkit-transform: translateX(-520px);
+        transform: translateX(-520px);
+    }
+    
+    .cont.s-signup .img-text.m-in {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    
+    .sign-in {
+        padding-top: 65px;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    
+    .cont.s-signup .sign-in {
+        -webkit-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
+        -webkit-transition-duration: 1.2s;
+        transition-duration: 1.2s;
+        -webkit-transform: translate3d(640px, 0, 0);
+        transform: translate3d(640px, 0, 0);
+    }
+    
+    .img-btn {
+        overflow: hidden;
+        z-index: 2;
+        position: relative;
+        width: 100px;
+        height: 36px;
+        margin: 0 auto;
+        background: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .img-btn:after {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #fff;
+        border-radius: 30px;
+    }
+    
+    .img-btn span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: -webkit-transform 1.2s;
+        transition: -webkit-transform 1.2s;
+        transition: transform 1.2s;
+        transition: transform 1.2s, -webkit-transform 1.2s;
+        ;
+    }
+    
+    .img-btn span.m-in {
+        -webkit-transform: translateY(-72px);
+        transform: translateY(-72px);
+    }
+    
+    .cont.s-signup .img-btn span.m-in {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    .cont.s-signup .img-btn span.m-up {
+        -webkit-transform: translateY(72px);
+        transform: translateY(72px);
+    }
+    
+    .sign-up {
+        -webkit-transform: translate3d(-900px, 0, 0);
+        transform: translate3d(-900px, 0, 0);
+    }
+    
+    .cont.s-signup .sign-up {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    #form{
+      
+      display: none;
+      position: relative;
+      justify-content: center;
+      margin-top: 80px;
+    }
+    .close{
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 30% ;
+
+        }
+    .button{
+      background-color: dodgerblue;
+
+    }
+</style>
+
+
+  <!-- =======================================================
+  * Template Name: Dewi
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="file:///home/rguktongole/Downloads/Dewi/index.html">PRESSMEET</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+       <a href="index.html" class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCdBYW9nnF_Hs3Zf7o686hq9tAZ0-DT5zB0g&usqp=CAU" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="file:///home/rguktongole/Downloads/Dewi/index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="file:///home/rguktongole/Downloads/Dewi/index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="file:///home/rguktongole/Downloads/Dewi/index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="file:///home/rguktongole/Downloads/Dewi/index.html#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="file:///home/rguktongole/Downloads/Dewi/index.html#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="file:///home/rguktongole/Downloads/Dewi/index.html#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+      <h1>PRESS MEET SCHEDULING</h1>
+      <h2>You are meetings are scheduled here</h2>
+      <div class="d-flex">
+        <a href="file:///home/rguktongole/Downloads/Dewi/index.html#about" class="btn-get-started scrollto">Get Started</a>&nbsp;&nbsp;&nbsp;
+		 <button class="btn-get-started scrollto" id="loginid">Login</button>
+        <section id="form">
+          <!-- login 
+            
+            section
+          
+          
+          -->
+          <div class="cont">
+            <form action="file:///home/rguktongole/Downloads/Dewi/login.php" target="_self" method="post" onsubmit="return loginrefresh()">
+           <div class="form sign-in">
+               <h2 style="color: #000; font-weight: bolder; text-transform: uppercase;">SIGN IN</h2>
+               <label>
+                 <span>Email Address</span>
+                 <input type="text" name="email">
+               </label>
+          
+               <label>
+                   <span>Password</span>
+                   <input type="password" name="password" class="password">
+                 </label>
+               <!-- <button class="submit" type="button">Sign In</button> -->
+               <input type="submit" class="submit" id="button" name="submit">
+               <p class="forgot-pass">Forgotten-password?</p>
+           </div>
+           <script>
+            function loginrefresh()
+            {
+              var name  = document.forms["myform"]["email"].value;
+              name="";
+              var password  = document.forms["myform"]["password"].value;
+              password="";
+            }
+            
+           </script>
+            </form>
+          
+           <div class="sub-cont">
+               <div class="img">
+                   <div class="img-text m-up">
+                       <h2>New here?</h2>
+                       <p>Sign up and discover great amount of new opportunities!</p>
+                   </div>
+                   <div class="img-text m-in">
+                       <h2>One of us?</h2>
+                       <p>If you already has an account, just sign in. We've missed you!</p>
+                   </div>
+                   <div class="img-btn">
+                    <span class="m-up">Sign Up</span>
+                    <span class="m-in">Sign In</span>
+                </div>
+                <div class="close">
+               
+                </div>
+               </div>
+
+               <!-- sign in 
+              
+                sectionnnnnnnnn
+              
+              -->
+               <form action="file:///home/rguktongole/Downloads/Dewi/validate.php" target="_blank" name="myform" onsubmit="return validateForm()" method="post">
+                <div class="form sign-up">
+                    <h2>Sign Up</h2>
+                    <label>
+                    <span>Name</span>
+                    <input type="text" name="myname" required="">
+                  </label>
+                    <label>
+                    <span>Email</span>
+                    <input type="email" name="myemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="enter the proper email with proper domain" required="">
+                  </label>
+                    <label>
+                    <span>Password</span>
+                    <input type="password" name="mypass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="">
+                  </label>
+                    <label>
+                    <span>Channel ID</span>
+                    <input type="text" name="mychannel" required="">
+                  </label>
+                  <input type="submit" class="submit" id="button">
+                </div>
+                </form>
+           </div>
+          
+          
+          </div>
+          </section>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+
+
+<!-- end division section -->
+<script>
+  function validateForm() {
+    let x  = document.forms["myform"]["mypass"].value;
+    if (x.length< 8) {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+  </script>
+<script type="text/javascript" src="file:///home/rguktongole/Downloads/Dewi/script.js"></script>
+<script>
+    document.querySelector('.img-btn').addEventListener('click', function()
+{
+document.querySelector('.cont').classList.toggle('s-signup')
+}
+);
+
+</script>
+ 
+<script>
+   const login=document.getElementById("loginid");
+   const head1=document.getElementById("head1");
+   const head2=document.getElementById("head2");
+   login.onclick=function(){
+       document.getElementById("form").style.display="block";
+       login.style.display="none";
+       document.getElementById("getstarted").style.display="none";
+       head1.style.display='none';
+       head2.style.display="none";
+
+   }
+   const cancel=document.getElementsByClassName("cancel");
+   cancel.onclick=function(){
+    document.getElementById("form").style.display="none";
+    login.style.display="block";
+       document.getElementById("getstarted").style.display="block";
+       head1.style.display='block';
+       head2.style.display="block";
+
+   }
+</script>
+ <!--------onclick----------->
+      
+    
+  <!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Boxes Section ======= -->
+    <section id="about-boxes" class="about-boxes">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <img src="./PROJECT_files/images" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="ri-brush-4-line"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="file:///home/rguktongole/Downloads/Dewi/index.html">Our Mission</a></h5>
+                <p class="card-text"> "Facilitating effective communication between organizations or individuals and the media." </p>
+				</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <img src="./PROJECT_files/images(1)" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="ri-calendar-check-line"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="file:///home/rguktongole/Downloads/Dewi/index.html">Our Plan</a></h5>
+                <p class="card-text"> "To ensure that the organization's messages are communicated clearly and that the event contributes positively to its overall communication strategy."</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <img src="./PROJECT_files/images(2)" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="ri-movie-2-line"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmHc4sV9cUrdPa54gHXo39F5Fb0piKhed8-g&usqp=CAU">Our Vision</a></h5>
+                <p class="card-text">"It aims to foster transparency, positive media relations, and strategic communication, contributing to the overall goals and mission of the organization." </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Boxes Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container aos-init aos-animate" data-aos="zoom-in">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="./PROJECT_files/images(3)" class="img-fluid" alt="">
+          </div>
+
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="./PROJECT_files/images(4)" class="img-fluid" alt="">
+          </div>
+	
+       <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="./PROJECT_files/images(5)" class="img-fluid" alt="">
+          </div>
+	
+	   <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="./PROJECT_files/images(6)" class="img-fluid" alt="">
+          </div>
+		  
+
+		   <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="./PROJECT_files/images(7)" class="img-fluid" alt="">
+          </div>
+		  
+		  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="./PROJECT_files/images(8)" class="img-fluid" alt="">
+          </div>
+
+          
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+       <h1><bold>Objectives</bold></h1>
+       <br>
+        <ul class="nav nav-tabs row d-flex" role="tablist">
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link active show" data-bs-toggle="tab" href="file:///home/rguktongole/Downloads/Dewi/index.html#tab-1" aria-selected="true" role="tab">
+              <i class="ri-gps-line"></i>
+              <h4 class="d-none d-lg-block">Information Dissemination</h4>
+            </a>
+          </li>
+          
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="file:///home/rguktongole/Downloads/Dewi/index.html#tab-3" aria-selected="false" tabindex="-1" role="tab">
+              <i class="ri-sun-line"></i>
+              <h4 class="d-none d-lg-block"Media Coverage>Media Coverage</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="file:///home/rguktongole/Downloads/Dewi/index.html#tab-4" aria-selected="false" tabindex="-1" role="tab">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Engagement</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="file:///home/rguktongole/Downloads/Dewi/index.html#tab-4" aria-selected="false" tabindex="-1" role="tab">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Answering Queries</h4>
+            </a>
+          </li>
+        <li class="nav-item col-3" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="file:///home/rguktongole/Downloads/Dewi/index.html#tab-4" aria-selected="false" tabindex="-1" role="tab">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Strategic Communication</h4>
+            </a>
+          </li>
+        <li class="nav-item col-3" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="file:///home/rguktongole/Downloads/Dewi/index.html#tab-4" aria-selected="false" tabindex="-1" role="tab">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Event Promotion</h4>
+            </a>
+          </li>
+        <li class="nav-item col-3" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="file:///home/rguktongole/Downloads/Dewi/index.html#tab-4" aria-selected="false" tabindex="-1" role="tab">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Policy Communication</h4>
+            </a>
+          </li>
+        <li class="nav-item col-3" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="file:///home/rguktongole/Downloads/Dewi/index.html#tab-4" aria-selected="false" tabindex="-1" role="tab">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Crisis Management</h4>
+            </a>
+          </li>
+
+        </ul>
+
+        
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Check our Services</p>
+        </div>
+
+        <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-6">
+            <div class="icon-box">
+              <i class="bi bi-laptop"></i>
+              <h4><a href="file:///home/rguktongole/Downloads/Dewi/index.html#">Event Planning:</a></h4>
+              <ul>
+              <li>Venue Selection</li>
+              <li>Logistic Management</li>
+              <li>Scheduling</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-bar-chart"></i>
+              <h4><a href="file:///home/rguktongole/Downloads/Dewi/index.html#">Media Outreach:</a></h4>
+              <ul>
+              <li>Invitation Mnagement</li>
+              <li>RSVP Coordination</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-brightness-high"></i>
+              <h4><a href="file:///home/rguktongole/Downloads/Dewi/index.html#">Follow-up Activities</a></h4>
+                    <ul>
+              <li>Media Follow-up</li>
+              <li>Feedback collection</li>
+           
+              </ul>
+            </div>
+          </div>
+                    
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-brightness-high"></i>
+              <h4><a href="file:///home/rguktongole/Downloads/Dewi/index.html#">Social Media Management:</a></h4>
+                    <ul>
+              <li>LIve Updates</li>
+              <li>Post-Event Engagement</li>
+           
+              </ul>
+            </div>
+          </div>
+          
+         </div>
+    </section><!-- End Services Section -->
+
+    
+         
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Check our Team</p>
+        </div>
+z
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic"><img src="" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sivamani Anjikumar</h4>
+                <span>coder</span>
+                <div class="social">
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-twitter"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-facebook"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-instagram"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+       <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic"><img src="./PROJECT_files/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-twitter"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-facebook"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-instagram"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		    <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic"><img src="./PROJECT_files/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-twitter"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-facebook"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-instagram"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="./PROJECT_files/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-twitter"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-facebook"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-instagram"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic"><img src="./PROJECT_files/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-twitter"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-facebook"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-instagram"></i></a>
+                  <a href="file:///home/rguktongole/Downloads/Dewi/index.html"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div></div></section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container aos-init aos-animate" data-aos="fade-up" "="">
+
+    <div class=" section-title">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="info-box">
+                <i class="bx bx-map"></i>
+                <h3>Our Address</h3>
+                <p>IIIT college ,Ongole,523321</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Us</h3>
+                <p>info@example.com<br>contact@example.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-phone-call"></i>
+                <h3>Call Us</h3>
+                <p>+91 9391398624<br>+1 6678 254445 41</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <form action="file:///home/rguktongole/Downloads/Dewi/forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>PRESSMEET</h3>
+              <p>
+                RGUKT-ONGOLE<br>
+                523321,ONgole<br><br>
+                <strong>Phone:</strong> +91 9391398624<br>
+                <strong>Email:</strong> team17@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="file:///home/rguktongole/Downloads/Dewi/index.html#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="file:///home/rguktongole/Downloads/Dewi/index.html#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="file:///home/rguktongole/Downloads/Dewi/index.html#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="file:///home/rguktongole/Downloads/Dewi/index.html#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="file:///home/rguktongole/Downloads/Dewi/index.html#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="file:///home/rguktongole/Downloads/Dewi/index.html#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="file:///home/rguktongole/Downloads/Dewi/index.html#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="file:///home/rguktongole/Downloads/Dewi/index.html#">Services</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="file:///home/rguktongole/Downloads/Dewi/index.html#">Event Planning</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="file:///home/rguktongole/Downloads/Dewi/index.html#">Media Outreach</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="file:///home/rguktongole/Downloads/Dewi/index.html#">Follow-up Activities</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="file:///home/rguktongole/Downloads/Dewi/index.html#">Social Media Management</a></li>
+</ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>"Catalyzing Conversations, Shaping Narratives: Precision and Purpose in Every Press Meet."</p>
+            <form action="file:///home/rguktongole/Downloads/Dewi/index.html" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">Team17</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  
+  <a href="file:///home/rguktongole/Downloads/Dewi/index.html#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="./PROJECT_files/purecounter_vanilla.js"></script>
+  <script src="./PROJECT_files/aos.js"></script>
+  <script src="./PROJECT_files/bootstrap.bundle.min.js"></script>
+  <script src="./PROJECT_files/glightbox.min.js"></script>
+  <script src="./PROJECT_files/isotope.pkgd.min.js"></script>
+  <script src="./PROJECT_files/swiper-bundle.min.js"></script>
+  <script src="./PROJECT_files/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="./PROJECT_files/main.js"></script>
+
+
+
+</body></html>
